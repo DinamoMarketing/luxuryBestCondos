@@ -1,0 +1,308 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.divider {
+    width: 2px;
+    height: 60px;
+    background-color: white;
+    margin: 0 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Espacio simétrico entre los enlaces */
+    margin: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold;
+    padding: 5px 10px; /* Añade un pequeño padding alrededor del texto */
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.nav-links li a:hover {
+    color: #f0c040; /* Cambia el color al pasar el mouse por encima */
+}
+
+.language-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.description-column h4 {
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.language-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.flags {
+    display: flex;
+    gap: 10px;
+}
+
+.flags img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.google-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.content-container {
+    display: flex;
+    padding: 20px;
+}
+
+.map-container {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.google-map {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 20px; /* Espacio entre la main image y las otras imágenes */
+}
+
+
+
+/* Estilos para los textos superpuestos en la esquina inferior izquierda */
+.text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    text-align: left;
+}
+
+.text-small {
+    font-size: 14px; /* Tamaño de la primera fila de texto */
+    margin: 0;
+}
+
+.text-large {
+    font-size: 24px; /* Tamaño de la segunda fila de texto */
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.text-medium {
+    font-size: 18px; /* Tamaño de la tercera fila de texto */
+    margin: 0;
+}
+
+/* Estilos para el contenedor flotante en la esquina superior derecha */
+.floating-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60%; /* El contenedor ocupará el 60% del ancho de la imagen principal */
+    height: 20%; /* El contenedor ocupará el 20% de la altura de la imagen principal */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de flotación */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
+}
+
+/* Estilos para la imagen dentro del contenedor flotante */
+.floating-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen se ajuste al contenedor */
+    padding: 5px; /* Espacio dentro del contenedor */
+}
+
+.image-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.image-grid img {
+    width: 48%;
+    border-radius: 5px;
+}
+
+.icon-text-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los íconos */
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Espacio entre el ícono y el número */
+}
+
+.icon-container i {
+    font-size: 24px; /* Tamaño del ícono */
+    color: black; /* Color negro para el contorno del ícono */
+}
+
+.icon-container span {
+    font-size: 16px;
+    color: black;
+}
+
+.icon-heart, .icon-save, .icon-comment {
+    font-size: 24px;
+}
+
+.rating-card {
+    display: flex;
+    justify-content: space-between; /* Separar la parte izquierda y derecha */
+    gap: 20px; /* Espacio entre las columnas izquierda y derecha */
+    align-items: center; /* Alinear verticalmente los elementos */
+}
+
+.stars-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Separar las estrellas del ícono */
+}
+
+.save-icon i {
+    font-size: 24px;
+    color: black; /* Color del ícono */
+}
+
+.right img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px; /* Separar la imagen del contenido de la izquierda */
+}
+
+.stars-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.stars {
+    font-size: 20px;
+    color: gold;
+}
+
+.footer-container {
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    gap: 30px; /* Espacio entre los íconos */
+}
+
+.sponsors img {
+  
+    width: auto;
+    height: 80px;
+
+}
+
+.save-icon {
+    font-size: 24px; 
+    color: #333; 
+}
